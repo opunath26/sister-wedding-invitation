@@ -1,3 +1,4 @@
+
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/wedding/Navbar";
 import {
@@ -23,10 +24,10 @@ const title = "শতাব্দী ও অর্ণব-এর শুভ বি
 const description =
   "শ্রী শ্রী গণেশায় নমঃ। ২৬ নভেম্বর ২০২৬ — আমাদের পরিবারের শুভ বিবাহে আপনাকে ও আপনার পরিবারকে সাদর আমন্ত্রণ।";
 
-// তোমার ওয়েবসাইটের আসল deployed domain বসাবে
-const siteUrl = "https://YOUR-DOMAIN.com";
+// তোমার ওয়েবসাইটের আসল deployed domain
+const siteUrl = "https://satabdi-arnab.vercel.app";
 
-// public/images/og-wedding.jpg ছবিটির absolute URL
+// Social media preview image
 const ogImage = `${siteUrl}/images/og-wedding.jpg`;
 
 export const Route = createFileRoute("/")({
@@ -36,6 +37,10 @@ export const Route = createFileRoute("/")({
         rel: "icon",
         type: "image/png",
         href: "/favicon.png",
+      },
+      {
+        rel: "canonical",
+        href: siteUrl,
       },
     ],
     meta: [
