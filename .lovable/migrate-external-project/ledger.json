@@ -1,0 +1,8 @@
+[
+  {"capability":"code","source":"TanStack Start archive","outcome":"migrate","status":"done","next_action":null},
+  {"capability":"schema","source":"MongoDB wedding_wishes, wedding_rsvps, rate_limits","outcome":"migrate to Lovable Cloud","status":"done","next_action":null},
+  {"capability":"records","source":"MongoDB","outcome":"migrate","status":"pending","next_action":"User exports wishes/RSVPs as JSON or CSV"},
+  {"capability":"auth","source":"single env-based admin (ADMIN_USERNAME/hash)","outcome":"Lovable auth + admin role","status":"pending","next_action":"Need admin email to grant role"},
+  {"capability":"email","source":"EmailJS (browser)","outcome":"preserved","status":"pending","next_action":"Set VITE_EMAILJS_* values"},
+  {"capability":"secrets","source":"MONGODB_URI, ADMIN_*","outcome":"no longer needed","status":"done","next_action":null}
+]
